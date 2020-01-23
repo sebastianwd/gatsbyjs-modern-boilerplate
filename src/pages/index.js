@@ -13,7 +13,7 @@ const IndexPage = () => {
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <GatsbyImage />
       </div>
-      <Link to="/page-2/">Go t o pa g e 2</Link>
+      <Link to="/page-2/">G o t o pa g e 2</Link>
     </DefaultLayout>
   )
 }
