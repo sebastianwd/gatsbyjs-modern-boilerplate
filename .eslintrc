@@ -16,7 +16,7 @@
     "strict": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "no-unused-vars": "error",
+    "no-unused-vars": "warn",
     "react/prop-types": 0,
     "react/display-name": 0,
     "import/prefer-default-export": 0,
