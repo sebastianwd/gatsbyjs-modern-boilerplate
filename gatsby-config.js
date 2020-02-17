@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby Essential Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@sebastianwd`,
   },
@@ -35,12 +35,28 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          components: path.resolve(__dirname, 'src/components'),
-          images: path.resolve(__dirname, 'src/images'),
-          layouts: path.resolve(__dirname, 'src/layouts'),
-          pages: path.resolve(__dirname, 'src/pages'),
+          '@components': path.resolve(__dirname, 'src/components'),
+          '@images': path.resolve(__dirname, 'src/images'),
+          '@layouts': path.resolve(__dirname, 'src/layouts'),
+          '@pages': path.resolve(__dirname, 'src/pages'),
+          '@hooks': path.resolve(__dirname, 'src/hooks'),
+          '@context': path.resolve(__dirname, 'src/context'),
+          '@theme': path.resolve(__dirname, 'src/theme'),
         },
         extensions: ['js', 'jsx'],
+      },
+    },
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/theme/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/layouts/default/index.js`),
       },
     },
   ],

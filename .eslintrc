@@ -17,18 +17,24 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-unused-vars": "warn",
+    "no-console": 0,
     "react/prop-types": 0,
     "react/display-name": 0,
     "import/prefer-default-export": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/forbid-prop-types": 0
   },
   "settings": {
     "import/resolver": {
       "alias": [
-        ["components", "./src/components"],
-        ["images", "./src/images"],
-        ["layouts", "./src/layouts"],
-        ["pages", "./src/pages"]
+        ["@components", "./src/components"],
+        ["@images", "./src/images"],
+        ["@layouts", "./src/layouts"],
+        ["@pages", "./src/pages"],
+        ["@hooks", "./src/hooks"],
+        ["@context", "./src/context"],
+        ["@theme", "./src/theme"]
       ]
     }
   }

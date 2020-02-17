@@ -1,20 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { DefaultLayout } from 'layouts'
-import { SEO, GatsbyImage } from 'components'
+import { SEO, GatsbyImage } from '@components'
+import { ThemesContext } from '@context'
 
 const IndexPage = () => {
+  const { setTheme } = useContext(ThemesContext)
+
   return (
-    <DefaultLayout>
+    <>
       <SEO title="Home" />
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <GatsbyImage />
+        <GatsbyImage filename="gatsby-astronaut.png" />
       </div>
-      <Link to="/page-2/">Go t o p a g e 2</Link>
-    </DefaultLayout>
+      <button onClick={() => setTheme('dark')} type="button">
+        change theme
+      </button>
+      <Link to="/page-2/">Go to page 2</Link>
+    </>
   )
 }
 

@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "jsx": "react",
     "paths": {
-      "components/*": ["components/*"],
-      "images/*": ["images/*"],
-      "layouts/*": ["layouts/*"],
-      "pages/*": ["pages/*"]
+      "@components": ["components"],
+      "@images/*": ["images/*"],
+      "@layouts": ["layouts/index"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks": ["hooks"],
+      "@context": ["context"],
+      "@theme": ["theme"]
     }
   },
   "exclude": ["node_modules"]
