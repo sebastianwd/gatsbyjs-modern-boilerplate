@@ -4,12 +4,13 @@
     "jsx": "react",
     "paths": {
       "@components": ["components"],
-      "@images/*": ["images/*"],
+      "@images": ["images"],
       "@layouts": ["layouts/index"],
       "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
+      "@pages": ["pages"],
       "@hooks": ["hooks"],
       "@context": ["context"],
+      "@theme/*": ["theme/*"],
       "@theme": ["theme"]
     }
   },

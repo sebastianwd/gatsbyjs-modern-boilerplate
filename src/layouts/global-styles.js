@@ -268,8 +268,8 @@ const styles = theme => css`
   body {
     height: 100%;
     overflow: hidden;
-    color: ${theme.text01};
-    background-color: ${theme.base01};
+    color: ${theme.textPrimary};
+    background-color: ${theme.background};
   }
 
   #___gatsby {
