@@ -12,4 +12,4 @@ Features:
 #### Start the project
 
     yarn install
-    yarn add
+    yarn start
