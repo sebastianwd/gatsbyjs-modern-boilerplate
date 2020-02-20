@@ -15,8 +15,8 @@ const IndexPage = () => {
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <GatsbyImage filename="gatsby-astronaut.png" />
       </div>
-      <button onClick={() => setTheme('dark')} type="button">
-        change theme
+      <button onClick={() => setTheme('light')} type="button">
+        Light theme
       </button>
       <Link to="/page-2/">Go to page 2</Link>
     </>

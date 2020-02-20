@@ -8,13 +8,13 @@ const themes = {
     textPrimary: '#FAF3F3',
     textSecondary: 'rgba(245, 245, 247, 0.8)',
   },
-  dark: {
-    background: 'white',
+  light: {
+    background: '#FFF',
     surface: '#1D1D21',
     black: '#0C0C0C ',
     primary: '#00fff5',
     secondary: '#2D2D2D',
-    textPrimary: 'black',
+    textPrimary: '#000',
     textSecondary: 'rgba(245, 245, 247, 0.8)',
   },
 }
